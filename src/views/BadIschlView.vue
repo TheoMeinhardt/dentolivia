@@ -40,12 +40,13 @@
             <span class="text-h5 text-bold text-primary q-mt-lg block">Fokus:</span>
 
             <div class="row text-italic text-weight-light q-mt-sm">
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="jaw">Kieferorthopädie</Chip>
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="teethMedicin">Allgemeine
+                Zahnmedizin</Chip>
 
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="aligner">Invisalign</Chip>
-
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="children">Kinderbehandlung
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="teethImplants">Implantologie
               </Chip>
+
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="teethAesthetic">Ästhetik</Chip>
             </div>
           </div>
 
@@ -55,14 +56,14 @@
             <span class="text-h5 text-bold text-primary q-mt-lg block">Ausstattung:</span>
 
             <div class="row text-italic text-weight-light q-mt-sm">
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="digitalScans">Digitale Scans
-              </Chip>
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="xray">Röntgen</Chip>
 
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="teethAesthetic">moderne
-                KFO-Technik</Chip>
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="dvt">DVT</Chip>
 
-              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="partner">
-                Invisalign-Partnerpraxis</Chip>
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="digitalWorkflow">digitale
+                Workflows</Chip>
+
+              <Chip v-reveal="{ once: true }" color="accent" text-color="primary" :img="scan3d">3D-Scan</Chip>
             </div>
           </div>
 
@@ -91,16 +92,16 @@
             Informationen benötigen, senden Sie uns bitte eine
             E‑Mail oder rufen Sie uns an.
             <span class="text-primary text-weight-bold">Wir helfen Ihnen gerne weiter!</span></span>
-          <q-chip v-reveal="{ once: true }" @click="redirectTo('https://maps.app.goo.gl/XJLwsii2k33Bef3U6')" clickable
-            size="md" color="accent" icon="map" square dense class="text-black">Mariahilfer Straße 112, 1070
-            Wien</q-chip>
+          <q-chip v-reveal="{ once: true }" @click="redirectTo('https://maps.app.goo.gl/9zXWirB2yf8s5DCk9')" clickable
+            size="md" color="accent" icon="map" square dense class="text-black">Salinenplatz 2A/1,
+            4820 Bad Ischl</q-chip>
           <br />
-          <q-chip v-reveal="{ once: true }" @click="redirectTo('tel:06644633073')" size="md" clickable color="accent"
-            icon="phone" square dense class="text-black">0664-46 33 073</q-chip>
+          <q-chip v-reveal="{ once: true }" @click="redirectTo('tel:0613228200')" size="md" clickable color="accent"
+            icon="phone" square dense class="text-black">06132/28200</q-chip>
           <br />
           <q-chip v-reveal="{ once: true }"
-            @click="redirectTo('mailto:ordination@zahnwien.at?subject=Anfrage an Ordination 1070')" clickable size="md"
-            color="accent" icon="mail" square dense class="text-black">ordination@zahnwien.at</q-chip>
+            @click="redirectTo('mailto:office@dentolivia.at?subject=Anfrage an Ordination Bad Ischl')" clickable
+            size="md" color="accent" icon="mail" square dense class="text-black">ordination@dentolivia.at</q-chip>
 
           <OpeningHours :opening-hours-data="openingHours" />
         </div>
@@ -112,10 +113,10 @@
     </div>
 
     <Footer :location-info="{
-      name: 'Ordination Mariahilfer Straße',
-      street: 'Mariahilfer Straße 112',
-      zipcode: '1070 Wien',
-      email: 'ordination@zahnwien.at',
+      name: 'Ordination Bad Ischl',
+      street: 'Salinenplatz 2A/1',
+      zipcode: '4820 Bad Ischl',
+      email: 'office@dentolivia.at',
     }" />
   </div>
 </template>
@@ -127,20 +128,21 @@ import ServiceBox from '@/components/ServiceBox.vue'
 import OpeningHours from '@/components/OpeningHours.vue'
 import Footer from '@/components/FooterComponent.vue'
 
-import aligner from '@/assets/icons/aligner.png'
-import children from '@/assets/icons/children.png'
-import digitalScans from '@/assets/icons/digital_scans.png'
-import jaw from '@/assets/icons/jaw.png'
-import partner from '@/assets/icons/partner.png'
+import teethMedicin from '@/assets/icons/teeth_medicin.png'
+import teethImplants from '@/assets/icons/teeth_implants.png'
 import teethAesthetic from '@/assets/icons/teeth_aesthetic.png'
+import digitalWorkflow from '@/assets/icons/digital_workflow.png'
+import scan3d from '@/assets/icons/3d_scan.png'
+import xray from '@/assets/icons/x_ray.png'
+import dvt from '@/assets/icons/DVT.png'
 
 import L from 'leaflet'
 import { onMounted, ref, type Ref } from 'vue'
 
 import type { locationData, openingHours } from '@/types'
 import { parseOpeningHours, parseImagePath, redirectTo } from '@/helpers'
-import rawData from '@/assets/data/1070/text.json'
-import rawOpeningHours from '@/assets/data/1070/openingHours.json'
+import rawData from '@/assets/data/4820/text.json'
+import rawOpeningHours from '@/assets/data/4820/openingHours.json'
 
 const data: Ref<locationData[]> = ref(rawData)
 const openingHours: Ref<openingHours> = ref(parseOpeningHours(rawOpeningHours))
@@ -150,14 +152,14 @@ const carouselSlide: Ref<number> = ref(0)
 const carouselAutoplay = ref(true)
 
 onMounted(() => {
-  map.value = L.map('map').setView([48.19671613828359, 16.343123042851115], 15)
+  map.value = L.map('map').setView([47.71090843053147, 13.625692556749078], 15)
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 25,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map.value)
 
-  mapMarker.value = L.marker([48.19671613828359, 16.343123042851115], {}).addTo(map.value)
-  mapMarker.value.bindPopup('<b>Mariahilfer Straße 112</b><br>1070 Wien')
+  mapMarker.value = L.marker([47.71090843053147, 13.625692556749078], {}).addTo(map.value)
+  mapMarker.value.bindPopup('<b>Salinenplatz 2A/1</b><br>4820 Bad Ischl')
 })
 
 data.value.forEach((locationDataItem) => {

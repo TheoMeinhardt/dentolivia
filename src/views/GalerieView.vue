@@ -8,9 +8,9 @@
     </div>
   </section>
 
-  <h2 class="überschrift">Mariahilferstraße</h2>
+  <h2 class="überschrift">Ordination Bad Ischl</h2>
   <section class="grid">
-    <div class="box" v-for="(img, index) in Mariahilfer" :key="index">
+    <div class="box" v-for="(img, index) in BadIschlImages" :key="index">
       <img :src="img" width="500px" @click="openBigImgMaria(index)">
     </div>
   </section>
@@ -30,25 +30,39 @@ import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/FooterComponent.vue'
 import { parseImagePath } from '@/helpers'
 
-const Mariahilfer = [
-  parseImagePath('img/Ordi_1070/VFN_7361.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7363.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7366.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7370.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7374.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7376.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7379.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7390.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7392.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7393.jpg'),
-  parseImagePath('img/Ordi_1070/VFN_7395.jpg')
+const BadIschlImages = [
+  parseImagePath('img/Ordi_4820/Ordi00_7537_pp.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi01_7591.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi02_7595.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi03_7602.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi04_7608.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi05_7615.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi06_7692.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi07_7628.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi08_7680.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi09_7657.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi10_7632.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi11_7645.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi12_7660.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi13_7682.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi14_7684.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi15_7694.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi16_7662.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi17_7663.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi18_7671.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi19_7672.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi20_7665.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi21_7669.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi22_7673.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi23_7687.jpg'),
+  parseImagePath('img/Ordi_4820/Ordi24_7702.jpg'),
 ]
 
 const showBigImg = ref(false);
 const currentImg = ref('');
 
 function openBigImgMaria(index: number) {
-  currentImg.value = Mariahilfer[index];
+  currentImg.value = BadIschlImages[index];
   showBigImg.value = true
 }
 
@@ -58,16 +72,16 @@ function closeBigImg() {
 
 function right() {
   if (currentImg.value.includes("1070")) {
-    const index = Mariahilfer.indexOf(currentImg.value);
-    const nextIndex = (index + 1) % Mariahilfer.length;
+    const index = BadIschlImages.indexOf(currentImg.value);
+    const nextIndex = (index + 1) % BadIschlImages.length;
     openBigImgMaria(nextIndex);
   }
 }
 
 function left() {
   if (currentImg.value.includes("1070")) {
-    const index = Mariahilfer.indexOf(currentImg.value);
-    const nextIndex = (index - 1) % Mariahilfer.length;
+    const index = BadIschlImages.indexOf(currentImg.value);
+    const nextIndex = (index - 1) % BadIschlImages.length;
     openBigImgMaria(nextIndex);
   }
 }

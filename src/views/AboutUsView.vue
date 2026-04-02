@@ -10,9 +10,9 @@
   </section>
 
   <!-- Gruppenbild -->
-  <div class="group-wrapper" v-reveal="{ once: true }">
-    <img class="groupImg" src="img/Uberuns/Gruppenbild.jpg" alt="Gruppenbild des Teams" />
-  </div>
+  <!-- <div class="group-wrapper" v-reveal="{ once: true }"> -->
+  <!--   <img class="groupImg" src="img/Uberuns/Gruppenbild.jpg" alt="Gruppenbild des Teams" /> -->
+  <!-- </div> -->
 
   <!-- Team-Karten -->
   <div class="soloPics">
@@ -23,7 +23,7 @@
     </article>
 
   </div>
-     <Footer />
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -38,15 +38,10 @@ const team = ref([
     bio: 'Dr. Isabelle Olivia ist spezialisiert auf ästhetische Zahnmedizin, Implantologie und digitale Workflows. Sie legt Wert auf individuelle Betreuung und moderne Behandlungsmethoden.'
   },
   {
-    name: 'Dr. Ewa Olivia',
-    img: 'img/Uberuns/Ewa.jpg',
-    bio: 'Dr. Ewa Olivia arbeitet mit einem Fokus auf Prophylaxe, Parodontologie und Kinderzahnmedizin. Sie schafft eine angenehme und entspannte Atmosphäre für alle Patienten.'
+    name: 'Dr. Güllü',
+    img: 'img/Uberuns/güllü.jpg',
+    bio: 'Platzhalter'
   },
-  {
-    name: 'Dr. Miriam Matejka',
-    img: 'img/Uberuns/dentist3.jpg',
-    bio: 'Dr. Miriam Matejka bringt langjährige Erfahrung in der Chirurgie und Implantologie mit. Sie sorgt für präzise Behandlungen und höchste Qualitätsstandards.'
-  }
 ])
 </script>
 
@@ -150,13 +145,27 @@ const team = ref([
 }
 
 @media (max-width: 900px) {
-  .headline { font-size: 2rem; }
-  .groupImg { width: 90%; }
+  .headline {
+    font-size: 2rem;
+  }
+
+  .groupImg {
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
-  .headline { font-size: 1.7rem; line-height: 1.2; }
-  .card { width: 90%; }
-  .soloPics { padding: 0 10px; }
+  .headline {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .soloPics {
+    padding: 0 10px;
+  }
 }
 </style>
