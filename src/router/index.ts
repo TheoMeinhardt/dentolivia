@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import MariahilferstrasseView from '@/views/MariahilferstrasseView.vue'
+import BadIschlView from '@/views/BadIschlView.vue'
 import AboutUsView from '@/views/AboutUsView.vue'
 import PrivacyPolicyView from '@/views/PrivacyPolicyView.vue'
 import LegalView from '@/views/LegalView.vue'
@@ -12,8 +12,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: MariahilferstrasseView,
-      name: 'MariahilferstrasseView',
+      component: BadIschlView,
+      name: 'BadIschlView',
     },
     {
       path: '/aboutUs',
