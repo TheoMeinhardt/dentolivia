@@ -88,6 +88,6 @@
     @font-face {
     font-family: 'TradeGothic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     src: local('Trade Gothic LT Std Bold Condensed No. 20'), url('trade-gothic-lt-std-bold-condensed-no-20-5872def1d27d8.woff') format('woff');
     }
