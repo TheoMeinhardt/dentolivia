@@ -49,7 +49,8 @@
     @font-face {
     font-family: 'MinionPro';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
+    font-stretch: condensed;
     src: local('Minion Pro Bold Condensed'), url('MinionPro-BoldCn.woff') format('woff');
     }
 
@@ -66,6 +67,7 @@
     font-family: 'MinionPro';
     font-style: italic;
     font-weight: 700;
+    font-stretch: condensed;
     src: local('Minion Pro Bold Condensed Italic'), url('MinionPro-BoldCnIt.woff') format('woff');
     }
 
