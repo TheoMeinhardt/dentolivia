@@ -163,7 +163,9 @@ onMounted(() => {
 })
 
 data.value.forEach((locationDataItem) => {
-  locationDataItem.image = parseImagePath('img/Details/' + locationDataItem.image)
+  if (locationDataItem.image.slice(0, 4) != "/img") {
+    locationDataItem.image = parseImagePath('img/Details/' + locationDataItem.image)
+  }
 })
 </script>
 
