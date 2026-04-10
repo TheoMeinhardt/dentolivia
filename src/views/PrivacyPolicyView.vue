@@ -2,7 +2,7 @@
   <NavBar background="dark" text="white" :overlay="false" :sticky="true" />
 
   <div class="q-pa-xl q-mt-xl text-body1">
-    <span class="text-h3 block">Datenschutzerklärung der Ordination Dr. Olivia</span>
+    <span class="text-h3 block">Datenschutzerklärung der Ordination Dr. Isabelle Olivia</span>
     Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Ihre Daten werden daher
     ausschließlich auf Grundlage der gesetzlichen Bestimmungen der Europäischen
     Datenschutz-Grundverordnung (DSGVO), sowie des österreichischen Datenschutzgesetzes (DSG) in der
@@ -15,12 +15,12 @@
     <br />
 
     <span class="text-h4 block">Datennutzung und Datenspeicherung</span>
-    Ihre Daten werden grundsätzlich nur von befugten Mitarbeitern der Ordination von Dr. Olivia
+    Ihre Daten werden grundsätzlich nur von befugten Mitarbeitern der Ordination von Dr. Isabelle Olivia
     genutzt und dienen ausschließlich der Kontaktaufnahme und Bearbeitung Ihrer Anfragen und
     Aufträge. Ihre Daten werden ohne Ihre Einwilligung nicht weitergegeben.
     <br />
     <br />
-    Wenn Sie mit der Ordination von Dr. Olivia telefonisch, per E-Mail oder per Formular auf der
+    Wenn Sie mit der Ordination von Dr. Isabelle Olivia telefonisch, per E-Mail oder per Formular auf der
     Website Kontakt aufnehmen, werden Ihre angegebenen Daten nur für die Dauer unseres Kontaktes
     gespeichert.
     <br />
@@ -34,7 +34,7 @@
     <br />
     <br />
     Nach Ablauf der oben erwähnten Fristen haben Sie – sofern nicht gesetzliche Aufbewahrungsfristen
-    dagegen sprechen – die Möglichkeit, die Löschung aller bei der Ordination von Dr. Olivia
+    dagegen sprechen – die Möglichkeit, die Löschung aller bei der Ordination von Dr. Isabelle Olivia
     gespeicherten personenbezogenen Daten schriftlich anzufordern. Ein entsprechendes
     Löschungsprotokoll wird Ihnen nach schriftlicher Aufforderung/Antrag zur Verfügung gestellt.
     <br />
@@ -48,15 +48,13 @@
     <br />
     <br />
     Weitere Informationen finden Sie unter dem Link der zuständigen Behörde
-    <a href="https://www.dsb.gv.at/" target="_blank" rel="noopener noreferrer"
-      >https://www.dsb.gv.at/</a
-    >
+    <a href="https://www.dsb.gv.at/" target="_blank" rel="noopener noreferrer">https://www.dsb.gv.at/</a>
     <br />
     <br />
     <span class="text-h6">Sie erreichen uns unter folgenden Kontaktdaten:</span>
     <br />
     <br />
-    <span class="text-weight-bold">Ordination Dr. Olivia</span> <br />
+    <span class="text-weight-bold">Ordination Dr. Isabelle Olivia</span> <br />
     Dornbacher Straße 1, <br />
     1170 Wien <br />
     <br />
@@ -117,24 +115,18 @@
     <br />
     <br />
     Weitere Informationen zu Google Fonts erhalten Sie unter folgendem Link:
-    <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer"
-      >https://developers.google.com/fonts/faq</a
-    >
+    <a href="https://developers.google.com/fonts/faq" target="_blank"
+      rel="noopener noreferrer">https://developers.google.com/fonts/faq</a>
     <br />
     Weitere Informationen über den Umgang mit Nutzerdaten von Google können Sie der
     Datenschutzerklärung entnehmen:
-    <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer"
-      >https://policies.google.com/privacy?hl=de</a
-    >.
+    <a href="https://policies.google.com/privacy?hl=de" target="_blank"
+      rel="noopener noreferrer">https://policies.google.com/privacy?hl=de</a>.
     <br />
     Google verarbeitet die Daten auch in den USA, hat sich jedoch dem EU-US Privacy-Shield
     unterworfen.
-    <a
-      href="https://www.privacyshield.gov/EU-US-Framework"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://www.privacyshield.gov/EU-US-Framework</a
-    >
+    <a href="https://www.privacyshield.gov/EU-US-Framework" target="_blank"
+      rel="noopener noreferrer">https://www.privacyshield.gov/EU-US-Framework</a>
     <br />
     <br />
 
@@ -190,7 +182,7 @@
       <li>Einschränkung</li>
     </ul>
     Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht
-    passiert sind, so haben Sie die Möglichkeit sich bei der Ordination von Dr. Olivia oder der
+    passiert sind, so haben Sie die Möglichkeit sich bei der Ordination von Dr. Isabelle Olivia oder der
     Datenschutzbehörde zu beschweren.
     <br />
     <br />
@@ -198,10 +190,10 @@
     <br />
     <br />
 
-    <span class="text-italic text-body2 block text-center"
-      >Diese Datenschutzerklärung wird von der Ordination Dr. Olivia periodisch aktualisiert und auf
-      Letztstand gebracht. Version 1.0 11/2025</span
-    >
+    <span class="text-italic text-body2 block text-center">Diese Datenschutzerklärung wird von der Ordination Dr.
+      Isabelle Olivia
+      periodisch aktualisiert und auf
+      Letztstand gebracht. Version 1.1 04/2026</span>
   </div>
 
   <Footer />
