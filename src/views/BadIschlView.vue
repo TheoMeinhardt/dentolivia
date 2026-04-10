@@ -163,7 +163,7 @@ onMounted(() => {
 })
 
 data.value.forEach((locationDataItem) => {
-  if (locationDataItem.image.slice(0, 4) != "/img") {
+  if (!locationDataItem.image.includes(import.meta.env.BASE_URL)) {
     locationDataItem.image = parseImagePath('img/Details/' + locationDataItem.image)
   }
 })
