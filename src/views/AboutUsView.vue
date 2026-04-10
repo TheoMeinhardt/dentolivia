@@ -37,6 +37,11 @@ const team = ref([
     img: 'img/Uberuns/isabelle_02.jpg',
     bio: 'Dr. Isabelle Olivia ist spezialisiert auf ästhetische Zahnmedizin, Implantologie und digitale Workflows. Sie legt Wert auf individuelle Betreuung und moderne Behandlungsmethoden.'
   },
+  {
+    name: 'Güllü',
+    img: 'img/Uberuns/güllü.jpg',
+    bio: 'Lorem Ipsum'
+  }
 ])
 </script>
 
