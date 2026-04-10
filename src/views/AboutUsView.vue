@@ -4,7 +4,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="headline">Ihre innovativen Zahnärztinnen in Dornbach und Mariahilf</h1>
+      <h1 class="headline">Ihre innovativen Zahnärztinnen in Bad Ischl!</h1>
       <p class="subline">Moderne Zahnmedizin • Ästhetik • Wohlfühlatmosphäre</p>
     </div>
   </section>

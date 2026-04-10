@@ -42,11 +42,11 @@ import Footer from '@/components/FooterComponent.vue'
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hero {
   width: 100%;
   padding: 140px 20px 100px;
-  background: linear-gradient(135deg, #22d3ee, #0c4a6e);
+  background: linear-gradient(135deg, $primary, $secondary);
   color: white;
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -93,7 +93,7 @@ label {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
-  color: #22d3ee;
+  color: $primary;
   font-size: 0.95rem;
 }
 
@@ -121,7 +121,7 @@ textarea {
   padding: 14px;
   border: none;
   border-radius: 14px;
-  background: #22d3ee;
+  background: $primary;
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
