@@ -4,7 +4,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="headline">Ihre innovativen Zahnärztinnen in Dornbach und Mariahilf</h1>
+      <h1 class="headline">Ihre innovativen Zahnärztinnen in Bad Ischl!</h1>
       <p class="subline">Moderne Zahnmedizin • Ästhetik • Wohlfühlatmosphäre</p>
     </div>
   </section>
@@ -33,15 +33,15 @@ import { ref } from 'vue'
 
 const team = ref([
   {
-    name: 'Dr. Isabelle Olivia',
-    img: 'img/Uberuns/isabelle.jpg',
-    bio: 'Dr. Isabelle Olivia ist spezialisiert auf ästhetische Zahnmedizin, Implantologie und digitale Workflows. Sie legt Wert auf individuelle Betreuung und moderne Behandlungsmethoden.'
+    name: 'Dr. med. dent. Isabelle Olivia',
+    img: 'img/Uberuns/isabelle_02.jpg',
+    bio: 'Dr. Isabelle Olivia ist auf ästhetische Zahnmedizin und Implantologie spezialisiert. Sie legt Wert auf individuelle Beratung und Betreuung mit modernen Behandlungsmethoden. Für Sie steht eine angenehme Atmosphäre während jeder Behandlung im Vordergrund.'
   },
   {
-    name: 'Dr. Güllü',
+    name: 'Güllü',
     img: 'img/Uberuns/güllü.jpg',
-    bio: 'Platzhalter'
-  },
+    bio: 'Lorem Ipsum'
+  }
 ])
 </script>
 
