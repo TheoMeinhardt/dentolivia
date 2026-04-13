@@ -53,12 +53,12 @@ a {
 
 .navbar {
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
 }
 
 .mobile-navbar {
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
 
   height: auto;
   max-height: 4.25rem;
