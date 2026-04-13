@@ -7,7 +7,7 @@
     <div class="mobile-navbar row full-width q-pa-md"
       :class="[bgClass, textClass, stickyClass, overlayClass, animationClass]">
       <RouterLink to="/" class="col-auto">
-        <q-img src="@/assets/icons/logo.png" width="2rem" fit="contain" />
+        <q-img src="@/assets/icons/Logo.svg" width="2rem" fit="contain" />
       </RouterLink>
       <q-space />
       <q-btn @click="navbarExpanded = !navbarExpanded" flat round dense dark :icon="navbarExpanded ? 'close' : 'menu'"
