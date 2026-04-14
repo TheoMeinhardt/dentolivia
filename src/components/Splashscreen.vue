@@ -7,20 +7,16 @@
       }"
     >
       <div class="fixed-center text-secondary">
-        <q-img id="animationTarget" src="@/assets/icons/Logo.svg" width="15rem" class="hide" />
+        <q-img src="@/assets/icons/Logo.svg" width="15rem" class="animationTarget hide" />
 
-        <span id="animationTarget" class="text-h3 q-mt-sm text-bold block hide"
+        <span class="text-h3 q-mt-sm text-bold block hide animationTarget"
           >Zahnmedizin, die zu Ihnen passt!</span
         >
-        <span
-          id="animationTarget"
-          class="text-h4 q-mt-md border-seperator font-TradeGothic block hide"
+        <span class="text-h4 q-mt-md border-seperator font-TradeGothic block hide animationTarget"
           >Zeit für klare Beratungsgespräche und gemeinsame Entscheidungen</span
         >
-        <span id="animationTarget" class="text-h5 text-italic q-mt-lg block hide"
-          >Dr. med. dent.</span
-        >
-        <span id="animationTarget" class="text-h1 block q-mb-xl hide">Isabelle Olivia</span>
+        <span class="text-h5 text-italic q-mt-lg block hide animationTarget">Dr. med. dent.</span>
+        <span class="text-h1 block q-mb-xl hide animationTarget">Isabelle Olivia</span>
       </div>
     </div>
   </div>
@@ -39,7 +35,7 @@ let animationTargets
 document.body.style.overflow = 'hidden'
 
 onMounted(() => {
-  animationTargets = document.querySelectorAll('#animationTarget')
+  animationTargets = document.querySelectorAll('.animationTarget')
 
   animationTargets.forEach((item, i) => {
     setTimeout(() => {
