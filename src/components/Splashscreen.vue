@@ -24,12 +24,14 @@
 
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import { onMounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import { parseImagePath } from '@/helpers'
 
 let isVisible: Ref<boolean> = ref(true)
 let backgroundImagePath = parseImagePath('img/splashscreen_bg.jpg')
-let animationTargets
+let animationTimeouts: number[] = []
+let hideTimeout: number[] = []
+let animationTargets: NodeListOf<Element>
 
 // disable scroll
 document.body.style.overflow = 'hidden'
@@ -38,23 +40,39 @@ onMounted(() => {
   animationTargets = document.querySelectorAll('.animationTarget')
 
   animationTargets.forEach((item, i) => {
-    setTimeout(() => {
-      item.classList.replace('hide', 'show')
-    }, i * 750)
+    animationTimeouts.push(
+      setTimeout(() => {
+        item.classList.replace('hide', 'show')
+      }, i * 750),
+    )
   })
 
-  setTimeout(() => {
-    hideScreen()
-  }, 6000) // 6 seconds
+  hideTimeout.push(
+    setTimeout(() => {
+      hideScreen()
+    }, 6000),
+  ) // 6 seconds
+})
+
+onUnmounted(() => {
+  hideTimeout.forEach((timeout) => {
+    clearTimeout(timeout)
+  })
 })
 
 function hideScreen() {
   document.querySelector('.splashscreen')?.classList.add('hide-splashscreen')
 
-  setTimeout(() => {
-    isVisible.value = false
-    document.body.style.overflow = 'visible'
-  }, 750)
+  hideTimeout.push(
+    setTimeout(() => {
+      isVisible.value = false
+      document.body.style.overflow = 'visible'
+    }, 750),
+  )
+
+  animationTimeouts.forEach((timeout) => {
+    clearTimeout(timeout)
+  })
 }
 </script>
 
