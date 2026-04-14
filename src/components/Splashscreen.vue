@@ -41,11 +41,12 @@ onMounted(() => {
       item.classList.replace("hide", "show")
     }, i * 750)
   })
+
+  setTimeout(() => { hideScreen() }, 6000) // 6 seconds
 })
 
 function hideScreen() {
   document.querySelector(".splashscreen")?.classList.add("hide-splashscreen")
-  console.log(document.querySelector(".splashscreen"))
 
   setTimeout(() => {
     isVisible.value = false
