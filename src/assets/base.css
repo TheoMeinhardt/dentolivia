@@ -1,95 +1,109 @@
 @font-face {
-    font-family: 'MinionPro';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Minion Pro Regular'), url('./fonts/MinionPro-Regular.woff') format('woff');
-    }
+  font-family: 'MinionPro';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Minion Pro Regular'),
+    url('./fonts/MinionPro-Regular.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'MinionPro';
+  font-style: italic;
+  font-weight: normal;
+  src:
+    local('Minion Pro Italic'),
+    url('./fonts/MinionPro-It.woff') format('woff');
+}
 
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Minion Pro Italic'), url('./fonts/MinionPro-It.woff') format('woff');
-    }
+@font-face {
+  font-family: 'MinionPro';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Minion Pro Medium'),
+    url('./fonts/MinionPro-Medium.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'MinionPro';
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local('Minion Pro Medium Italic'),
+    url('./fonts/MinionPro-MediumIt.woff') format('woff');
+}
 
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Minion Pro Medium'), url('./fonts/MinionPro-Medium.woff') format('woff');
-    }
+@font-face {
+  font-family: 'MinionPro';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Minion Pro Semibold'),
+    url('./fonts/MinionPro-Semibold.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'MinionPro';
+  font-style: italic;
+  font-weight: 600;
+  src:
+    local('Minion Pro Semibold Italic'),
+    url('./fonts/MinionPro-SemiboldIt.woff') format('woff');
+}
 
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: italic;
-    font-weight: 500;
-    src: local('Minion Pro Medium Italic'), url('./fonts/MinionPro-MediumIt.woff') format('woff');
-    }
+@font-face {
+  font-family: 'MinionPro';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: condensed;
+  src:
+    local('Minion Pro Bold Condensed'),
+    url('./fonts/MinionPro-BoldCn.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'MinionPro';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Minion Pro Bold'),
+    url('./fonts/MinionPro-Bold.woff') format('woff');
+}
 
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Minion Pro Semibold'), url('./fonts/MinionPro-Semibold.woff') format('woff');
-    }
+@font-face {
+  font-family: 'MinionPro';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: condensed;
+  src:
+    local('Minion Pro Bold Condensed Italic'),
+    url('./fonts/MinionPro-BoldCnIt.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'MinionPro';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local('Minion Pro Bold Italic'),
+    url('./fonts/MinionPro-BoldIt.woff') format('woff');
+}
 
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: italic;
-    font-weight: 600;
-    src: local('Minion Pro Semibold Italic'), url('./fonts/MinionPro-SemiboldIt.woff') format('woff');
-    }
+@font-face {
+  font-family: 'TradeGothic';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Trade Gothic LT Std Regular'),
+    url('./fonts/trade-gothic-lt-std-58a78e64434a9.woff') format('woff');
+}
 
-
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: normal;
-    font-weight: 700;
-    font-stretch: condensed;
-    src: local('Minion Pro Bold Condensed'), url('./fonts/MinionPro-BoldCn.woff') format('woff');
-    }
-
-
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Minion Pro Bold'), url('./fonts/MinionPro-Bold.woff') format('woff');
-    }
-
-
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: italic;
-    font-weight: 700;
-    font-stretch: condensed;
-    src: local('Minion Pro Bold Condensed Italic'), url('./fonts/MinionPro-BoldCnIt.woff') format('woff');
-    }
-
-
-    @font-face {
-    font-family: 'MinionPro';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Minion Pro Bold Italic'), url('./fonts/MinionPro-BoldIt.woff') format('woff');
-    }
-
-    @font-face {
-    font-family: 'TradeGothic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Trade Gothic LT Std Regular'), url('./fonts/trade-gothic-lt-std-58a78e64434a9.woff') format('woff');
-    }
-
-
-    @font-face {
-    font-family: 'TradeGothic';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Trade Gothic LT Std Bold Condensed No. 20'), url('./fonts/trade-gothic-lt-std-bold-condensed-no-20-5872def1d27d8.woff') format('woff');
-    }
+@font-face {
+  font-family: 'TradeGothic';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Trade Gothic LT Std Bold Condensed No. 20'),
+    url('./fonts/trade-gothic-lt-std-bold-condensed-no-20-5872def1d27d8.woff') format('woff');
+}

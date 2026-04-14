@@ -11,13 +11,13 @@
   <h2 class="überschrift">Ordination Bad Ischl</h2>
   <section class="grid">
     <div class="box" v-for="(img, index) in BadIschlImages" :key="index">
-      <img :src="img" width="500px" @click="openBigImgMaria(index)">
+      <img :src="img" width="500px" @click="openBigImgMaria(index)" />
     </div>
   </section>
 
   <div class="BigImgOverlay" v-if="showBigImg">
     <button class="btnLeft" @click="left()">←</button>
-    <img class="bigImg" :src="currentImg">
+    <img class="bigImg" :src="currentImg" />
     <button class="btnRight" @click="right()">→</button>
     <button class="btnClose" @click="closeBigImg()">×</button>
   </div>
@@ -58,11 +58,11 @@ const BadIschlImages = [
   parseImagePath('img/Ordi_4820/Ordi24_7702.jpg'),
 ]
 
-const showBigImg = ref(false);
-const currentImg = ref('');
+const showBigImg = ref(false)
+const currentImg = ref('')
 
 function openBigImgMaria(index: number) {
-  currentImg.value = BadIschlImages[index];
+  currentImg.value = BadIschlImages[index]
   showBigImg.value = true
 }
 
@@ -71,21 +71,20 @@ function closeBigImg() {
 }
 
 function right() {
-  if (currentImg.value.includes("1070")) {
-    const index = BadIschlImages.indexOf(currentImg.value);
-    const nextIndex = (index + 1) % BadIschlImages.length;
-    openBigImgMaria(nextIndex);
+  if (currentImg.value.includes('1070')) {
+    const index = BadIschlImages.indexOf(currentImg.value)
+    const nextIndex = (index + 1) % BadIschlImages.length
+    openBigImgMaria(nextIndex)
   }
 }
 
 function left() {
-  if (currentImg.value.includes("1070")) {
-    const index = BadIschlImages.indexOf(currentImg.value);
-    const nextIndex = (index - 1) % BadIschlImages.length;
-    openBigImgMaria(nextIndex);
+  if (currentImg.value.includes('1070')) {
+    const index = BadIschlImages.indexOf(currentImg.value)
+    const nextIndex = (index - 1) % BadIschlImages.length
+    openBigImgMaria(nextIndex)
   }
 }
-
 </script>
 
 <style scoped lang="scss">
@@ -136,7 +135,9 @@ function left() {
   object-fit: cover;
   border-radius: 25px;
   border: 3px solid $primary;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 
