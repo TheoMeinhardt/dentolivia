@@ -1,15 +1,25 @@
 <template>
   <div v-show="isVisible" @click="hideScreen()" class="splashscreen">
-    <div class="text-center full-width full-height" :style="{
-      backgroundImage: 'url(' + backgroundImagePath + ')',
-    }">
+    <div
+      class="text-center full-width full-height"
+      :style="{
+        backgroundImage: 'url(' + backgroundImagePath + ')',
+      }"
+    >
       <div class="fixed-center text-secondary">
         <q-img id="animationTarget" src="@/assets/icons/Logo.svg" width="15rem" class="hide" />
 
-        <span id="animationTarget" class="text-h3 q-mt-sm text-bold block hide">Zahnmedizin, die zu Ihnen passt!</span>
-        <span id="animationTarget" class="text-h4 q-mt-md border-seperator font-TradeGothic block hide">Zeit für klare
-          Beratungsgespräche und gemeinsame Entscheidungen</span>
-        <span id="animationTarget" class="text-h5 text-italic q-mt-lg block hide">Dr. med. dent.</span>
+        <span id="animationTarget" class="text-h3 q-mt-sm text-bold block hide"
+          >Zahnmedizin, die zu Ihnen passt!</span
+        >
+        <span
+          id="animationTarget"
+          class="text-h4 q-mt-md border-seperator font-TradeGothic block hide"
+          >Zeit für klare Beratungsgespräche und gemeinsame Entscheidungen</span
+        >
+        <span id="animationTarget" class="text-h5 text-italic q-mt-lg block hide"
+          >Dr. med. dent.</span
+        >
         <span id="animationTarget" class="text-h1 block q-mb-xl hide">Isabelle Olivia</span>
       </div>
     </div>
