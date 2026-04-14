@@ -28,6 +28,15 @@ body {
     serif !important;
 }
 
+.font-TradeGothic {
+    font-family:
+    'TradeGothic',
+    system-ui,
+    -apple-system,
+    'Roboto',
+    sans-serif !important;
+}
+
 /* Scroll reveal utility */
 .reveal {
   transition:
