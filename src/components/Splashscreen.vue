@@ -39,8 +39,13 @@ onMounted(() => {
 })
 
 function hideScreen() {
-  isVisible.value = false
-  document.body.style.overflow = "visible"
+  document.querySelector(".splashscreen")?.classList.add("hide-splashscreen")
+  console.log(document.querySelector(".splashscreen"))
+
+  setTimeout(() => {
+    isVisible.value = false
+    document.body.style.overflow = "visible"
+  }, 750)
 }
 </script>
 
@@ -72,6 +77,10 @@ function hideScreen() {
 
 .show {
   animation: ease-opacity .75s ease-in 0s 1 normal forwards;
+}
+
+.hide-splashscreen {
+  animation: ease-opacity .75s ease-in 0s 1 reverse forwards;
 }
 
 .border-seperator {
