@@ -1,6 +1,9 @@
 <template>
   <div v-show="isVisible" @click="hideScreen()" class="splashscreen">
-    <div class="text-center full-width full-height ">
+    <div class="text-center full-width full-height" :style="{
+      'backgroundImage':
+        'url(' + backgroundImagePath + ')'
+    }">
 
       <div class="fixed-center text-secondary">
 
@@ -21,8 +24,10 @@
 <script setup lang="ts">
 import type { Ref } from "vue"
 import { onMounted, ref } from "vue"
+import { parseImagePath } from "@/helpers"
 
 let isVisible: Ref<boolean> = ref(true)
+let backgroundImagePath = parseImagePath("img/splashscreen_bg.jpg")
 let animationTargets
 
 // disable scroll
