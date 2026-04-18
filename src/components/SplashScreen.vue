@@ -71,9 +71,11 @@ onMounted(() => {
 
   animationIntervals.push(
     setInterval(() => {
-      if (clickIconName.value == 'fa-solid fa-hand-pointer')
+      if (clickIconName.value === 'fa-solid fa-hand-pointer') {
         clickIconName.value = 'fa-regular fa-hand-pointer'
-      else clickIconName.value = 'fa-solid fa-hand-pointer'
+      } else {
+        clickIconName.value = 'fa-solid fa-hand-pointer'
+      }
     }, 750),
   )
 
