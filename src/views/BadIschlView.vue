@@ -5,21 +5,23 @@
     <div class="q-mt-xl q-pt-xl q-px-lg">
       <!-- Heading -->
       <div class="text-primary" v-reveal="{ once: true }">
-        <span class="gt-sm text-h4 text-weight-bolder block">Salinenplatz 2A/1</span>
-        <span class="lt-md text-h6 text-weight-bolder block">Salinenplatz 2A/1</span>
-        <span class="gt-sm text-h4 text-italic">4820 Bad Ischl</span>
-        <span class="lt-md text-h6 text-italic">4820 Bad Ischl</span>
+        <span class="gt-sm text-h2 text-weight-bolder block q-mb-xl q-mt-lg"
+          >Zahnarztordination Dentolivia</span
+        >
+        <span class="lt-md text-h4 text-weight-bolder block">Zahnarztordination Dentolivia</span>
+        <!-- <span class="gt-sm text-h4 text-italic">4820 Bad Ischl</span> -->
+        <!-- <span class="lt-md text-h6 text-italic">4820 Bad Ischl</span> -->
       </div>
 
       <div class="row wrap items-center justify-between">
         <!-- Einführungstext -->
         <div class="col-12 col-md-5" v-reveal="{ once: true }">
-          <span class="block q-my-lg text-body1 text-justify"
-            >Generationenwechsel in Bad Ischl! Ende März 2026 hat sich Dr. Aster in den
-            wohlverdienten Ruhestand verabschiedet. Die Ordination wird von Dr. Isabelle Olivia
-            weitergeführt. Ab sofort werden Sie von einem jungen dynamischen Team bestens betreut.
-            Wir freuen uns auch neue Patienten begrüßen zu dürfen.</span
-          >
+          <!-- <span class="block q-my-lg text-body1 text-justify" -->
+          <!--   >Generationenwechsel in Bad Ischl! Ende März 2026 hat sich Dr. Aster in den -->
+          <!--   wohlverdienten Ruhestand verabschiedet. Die Ordination wird von Dr. Isabelle Olivia -->
+          <!--   weitergeführt. Ab sofort werden Sie von einem jungen dynamischen Team bestens betreut. -->
+          <!--   Wir freuen uns auch neue Patienten begrüßen zu dürfen.</span -->
+          <!-- > -->
 
           <q-carousel
             v-model="carouselSlide"
@@ -122,8 +124,17 @@
           </div>
 
           <!-- Opening Hours -->
-          <div v-reveal="{ once: true }">
-            <OpeningHours :opening-hours-data="openingHours" />
+          <div v-reveal="{ once: true }" class="row justify-left">
+            <div class="col-5">
+              <OpeningHours :opening-hours-data="openingHours" />
+            </div>
+            <div class="col-5 text-body1">
+              <span class="text-h5 text-primary text-bold q-mt-lg block">Kosten & Optionen</span>
+              <span class="text-bold">Alle</span> Leistungen der
+              <span class="text-bold">gesetzlichen Krankenkasse</span> werden abgedeckt.<br />
+              Zusätzlich gibt es weiterführende Möglichkeiten. Was sinnvoll ist, wird im Gespräch
+              geklärt.
+            </div>
           </div>
         </div>
       </div>
