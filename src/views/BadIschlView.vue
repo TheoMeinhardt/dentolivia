@@ -124,11 +124,11 @@
           </div>
 
           <!-- Opening Hours -->
-          <div v-reveal="{ once: true }" class="row justify-left">
-            <div class="col-5">
+          <div v-reveal="{ once: true }" class="row wrap justify-left">
+            <div class="col-md-5 col-sm-12">
               <OpeningHours :opening-hours-data="openingHours" />
             </div>
-            <div class="col-5 text-body1">
+            <div class="col-md-5 col-sm-12 text-body1">
               <span class="text-h5 text-primary text-bold q-mt-lg block">Kosten & Optionen</span>
               <span class="text-bold">Alle</span> Leistungen der
               <span class="text-bold">gesetzlichen Krankenkasse</span> werden abgedeckt.<br />
