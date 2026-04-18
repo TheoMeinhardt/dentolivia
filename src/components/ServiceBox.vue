@@ -75,13 +75,14 @@ function flip() {
 
 <style lang="scss" scoped>
 .box {
-  height: 40vh !important;
+  height: 45vh !important;
   min-width: 45vw;
   overflow: hidden;
   position: relative;
 
-  border: $primary 2px solid;
+  // border: $primary 2px solid;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px $dim;
 
   transition:
     transform 0.15s ease-out,

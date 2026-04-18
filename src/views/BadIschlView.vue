@@ -140,13 +140,15 @@
       </div>
 
       <div class="q-mt-xl">
-        <span class="text-primary text-h3 text-weight-bold block" v-reveal="{ once: true }"
+        <span
+          class="text-primary text-center text-h3 text-weight-bold block"
+          v-reveal="{ once: true }"
           >Leistungen</span
         >
 
-        <div class="row wrap justify-between">
+        <div class="row wrap justify-between q-px-xl">
           <ServiceBox
-            class="col-12 col-md-5 q-mt-xl"
+            class="col-12 col-md-5 q-my-xl"
             v-for="(item, key) in data"
             v-reveal="{ once: true }"
             :header="item.header"
