@@ -27,10 +27,10 @@ import type { Ref } from 'vue'
 import { onMounted, onUnmounted, ref } from 'vue'
 import { parseImagePath } from '@/helpers'
 
-let isVisible: Ref<boolean> = ref(true)
-let backgroundImagePath = parseImagePath('img/splashscreen_bg.jpg')
-let animationTimeouts: number[] = []
-let hideTimeout: number[] = []
+const isVisible: Ref<boolean> = ref(true)
+const backgroundImagePath = parseImagePath('img/splashscreen_bg.jpg')
+const animationTimeouts: number[] = []
+const hideTimeout: number[] = []
 let animationTargets: NodeListOf<Element>
 
 onMounted(() => {
