@@ -27,11 +27,8 @@
         <textarea id="message" placeholder="Deine Nachricht..." required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">
-        Nachricht senden
-      </button>
+      <button type="submit" class="submit-btn">Nachricht senden</button>
     </form>
-
   </div>
   <Footer />
 </template>
@@ -39,7 +36,6 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/FooterComponent.vue'
-
 </script>
 
 <style scoped lang="scss">

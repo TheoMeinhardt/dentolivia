@@ -2,20 +2,33 @@
   <div>
     <!-- Regular NavBar for big screens -->
 
-
     <!-- collapsed NavBar for small screens -->
-    <div class="mobile-navbar row full-width q-pa-md"
-      :class="[bgClass, textClass, stickyClass, overlayClass, animationClass]">
+    <div
+      class="mobile-navbar row full-width q-pa-md"
+      :class="[bgClass, textClass, stickyClass, overlayClass, animationClass]"
+    >
       <RouterLink to="/" class="col-auto">
         <q-img src="@/assets/icons/Logo.svg" width="2rem" fit="contain" />
       </RouterLink>
       <q-space />
-      <q-btn @click="navbarExpanded = !navbarExpanded" flat round dense dark :icon="navbarExpanded ? 'close' : 'menu'"
-        class="col-auto" aria-label="Toggle navigation menu" :aria-expanded="navbarExpanded" />
+      <q-btn
+        @click="navbarExpanded = !navbarExpanded"
+        flat
+        round
+        dense
+        dark
+        :icon="navbarExpanded ? 'close' : 'menu'"
+        class="col-auto"
+        aria-label="Toggle navigation menu"
+        :aria-expanded="navbarExpanded"
+      />
 
       <!-- RouterLinks -->
-      <nav class="col-12 column text-h6 text-center q-py-md test" v-show="navbarExpanded"
-        :aria-hidden="!navbarExpanded">
+      <nav
+        class="col-12 column text-h6 text-center q-py-md test"
+        v-show="navbarExpanded"
+        :aria-hidden="!navbarExpanded"
+      >
         <RouterLink to="/contactUs" class="col-2 text-weight-bolder">Terminvereinbarung</RouterLink>
         <RouterLink to="/aboutUs" class="col-auto">Über uns</RouterLink>
         <RouterLink to="/" class="col-auto">Home</RouterLink>
@@ -53,12 +66,12 @@ a {
 
 .navbar {
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
 }
 
 .mobile-navbar {
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
 
   height: auto;
   max-height: 4.25rem;

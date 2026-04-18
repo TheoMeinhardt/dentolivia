@@ -2,10 +2,12 @@
 import { RouterView } from 'vue-router'
 
 import CookieBanner from './components/CookieBanner.vue'
+import Splashscreen from './components/Splashscreen.vue'
 </script>
 
 <template>
   <CookieBanner />
+  <Splashscreen />
 
   <RouterView />
 </template>

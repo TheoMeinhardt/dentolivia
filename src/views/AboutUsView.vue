@@ -16,12 +16,16 @@
 
   <!-- Team-Karten -->
   <div class="soloPics">
-    <article class="person card" v-for="member in team" :key="member.name" v-reveal="{ once: true }">
+    <article
+      class="person card"
+      v-for="member in team"
+      :key="member.name"
+      v-reveal="{ once: true }"
+    >
       <img :src="member.img" class="soloImg" :alt="member.name" />
       <h2 class="name">{{ member.name }}</h2>
       <p class="bio">{{ member.bio }}</p>
     </article>
-
   </div>
   <Footer />
 </template>
@@ -35,13 +39,13 @@ const team = ref([
   {
     name: 'Dr. med. dent. Isabelle Olivia',
     img: 'img/Uberuns/isabelle_02.jpg',
-    bio: 'Dr. Isabelle Olivia ist auf ästhetische Zahnmedizin und Implantologie spezialisiert. Sie legt Wert auf individuelle Beratung und Betreuung mit modernen Behandlungsmethoden. Für Sie steht eine angenehme Atmosphäre während jeder Behandlung im Vordergrund.'
+    bio: 'Dr. Isabelle Olivia ist auf ästhetische Zahnmedizin und Implantologie spezialisiert. Sie legt Wert auf individuelle Beratung und Betreuung mit modernen Behandlungsmethoden. Für Sie steht eine angenehme Atmosphäre während jeder Behandlung im Vordergrund.',
   },
   {
     name: 'Güllü',
     img: 'img/Uberuns/güllü.jpg',
-    bio: 'Lorem Ipsum'
-  }
+    bio: 'Lorem Ipsum',
+  },
 ])
 </script>
 

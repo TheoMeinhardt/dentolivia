@@ -20,12 +20,22 @@ body {
   font-weight: 300;
 }
 
-.text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6 {
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6 {
+  font-family: 'MinionPro', Georgia, 'Times New Roman', serif !important;
+}
+
+.font-TradeGothic {
   font-family:
-    'MinionPro',
-    Georgia,
-    'Times New Roman',
-    serif !important;
+    'TradeGothic',
+    system-ui,
+    -apple-system,
+    'Roboto',
+    sans-serif !important;
 }
 
 /* Scroll reveal utility */
