@@ -52,7 +52,7 @@ function declineCookies(): void {
   width: 50vw;
   min-width: 200px;
 
-  z-index: 10000;
+  z-index: 9;
   border: 1px $primary solid;
   border-radius: 20px;
 }

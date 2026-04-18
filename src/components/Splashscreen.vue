@@ -33,10 +33,10 @@ let animationTimeouts: number[] = []
 let hideTimeout: number[] = []
 let animationTargets: NodeListOf<Element>
 
-// disable scroll
-document.body.style.overflow = 'hidden'
-
 onMounted(() => {
+  // disable scroll
+  document.body.style.overflow = 'hidden'
+
   animationTargets = document.querySelectorAll('.animationTarget')
 
   animationTargets.forEach((item, i) => {
@@ -50,11 +50,12 @@ onMounted(() => {
   hideTimeout.push(
     setTimeout(() => {
       hideScreen()
-    }, 6000),
+    }, 8000),
   ) // 6 seconds
 })
 
 onUnmounted(() => {
+  document.body.style.overflow = 'visible'
   hideTimeout.forEach((timeout) => {
     clearTimeout(timeout)
   })
@@ -78,7 +79,7 @@ function hideScreen() {
 
 <style scoped lang="scss">
 .splashscreen {
-  position: absolute;
+  position: fixed;
   top: 0px;
 
   width: 100vw;
