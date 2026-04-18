@@ -7,16 +7,32 @@
       }"
     >
       <div class="fixed-center text-secondary">
-        <q-img src="@/assets/icons/Logo.svg" width="15rem" class="animationTarget hide" />
+        <q-img src="@/assets/icons/Logo.svg" width="20vh" class="animationTarget hide" />
 
-        <span class="text-h3 q-mt-sm text-bold block hide animationTarget"
+        <span class="gt-sm text-h3 q-mt-sm text-bold block hide animationTarget"
           >Zahnmedizin, die zu Ihnen passt!</span
         >
-        <span class="text-h4 q-mt-md border-seperator font-TradeGothic block hide animationTarget"
+        <span class="lt-md text-h5 q-mt-sm text-bold block hide animationTarget"
+          >Zahnmedizin, die zu Ihnen passt!</span
+        >
+
+        <span
+          class="gt-sm text-h4 q-mt-md border-seperator font-TradeGothic block hide animationTarget"
           >Zeit für klare Beratungsgespräche und gemeinsame Entscheidungen</span
         >
-        <span class="text-h5 text-italic q-mt-lg block hide animationTarget">Dr. med. dent.</span>
-        <span class="text-h1 block q-mb-xl hide animationTarget">Isabelle Olivia</span>
+        <span
+          class="lt-md text-h6 q-mt-md border-seperator font-TradeGothic block hide animationTarget"
+          >Zeit für klare Beratungsgespräche und gemeinsame Entscheidungen</span
+        >
+
+        <span class="gt-sm text-h5 text-italic q-mt-lg block hide animationTarget"
+          >Dr. med. dent.</span
+        >
+        <span class="lt-md text-h6 text-italic q-mt-lg block hide animationTarget"
+          >Dr. med. dent.</span
+        >
+        <span class="gt-sm text-h1 block q-mb-xl hide animationTarget">Isabelle Olivia</span>
+        <span class="lt-md text-h3 block q-mb-xl hide animationTarget">Isabelle Olivia</span>
 
         <div class="text-right hide animationTarget">
           <q-icon :name="animatedIconName" size="2rem" style="transform: rotate(-35deg)"></q-icon>
@@ -58,7 +74,7 @@ onMounted(() => {
       if (clickIconName.value == 'fa-solid fa-hand-pointer')
         clickIconName.value = 'fa-regular fa-hand-pointer'
       else clickIconName.value = 'fa-solid fa-hand-pointer'
-    }, 1000),
+    }, 750),
   )
 
   hideTimeout.push(
