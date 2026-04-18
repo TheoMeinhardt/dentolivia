@@ -13,7 +13,7 @@
         <!-- <span class="lt-md text-h6 text-italic">4820 Bad Ischl</span> -->
       </div>
 
-      <div class="row wrap items-center justify-between">
+      <div class="row reverse-wrap items-center justify-between" style="height: fit-content">
         <!-- Einführungstext -->
         <div class="col-12 col-md-5" v-reveal="{ once: true }">
           <!-- <span class="block q-my-lg text-body1 text-justify" -->
@@ -41,7 +41,7 @@
             @mouseenter="carouselAutoplay = false"
             @mouseleave="carouselAutoplay = true"
             height="45vh"
-            class="shadow-1 rounded-borders"
+            class="shadow-1 q-my-lg rounded-borders"
           >
             <q-carousel-slide
               :name="0"
