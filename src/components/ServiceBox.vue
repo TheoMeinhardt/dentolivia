@@ -94,7 +94,6 @@ function flip() {
 
 .box:hover {
   transform: scale(1.025);
-  box-shadow: 0px 0px 10px $primary;
 }
 
 .card-back {
