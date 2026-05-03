@@ -146,7 +146,7 @@
           >Leistungen</span
         >
 
-        <div class="row wrap justify-between q-px-xl">
+        <div class="row wrap justify-around">
           <ServiceBox
             class="col-12 col-md-5 q-my-xl"
             v-for="(item, key) in data"

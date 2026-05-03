@@ -22,13 +22,13 @@
     <!-- Frontside -->
     <div class="q-mb-md q-mx-lg front-content full-width" :class="{ 'front-hidden': !showFront }">
       <q-img
-        class="full-width front-image q-mb-xl"
+        class="full-width front-image q-mb-lg"
         :src="props.image"
         :class="{ 'front-hidden': !showFront }"
         contain
       ></q-img>
 
-      <div class="q-px-xl">
+      <div class="q-px-lg">
         <span class="text-primary text-h5 block">{{ props.header }}</span>
         <span class="text-dark text-subtitle2 text-weight-regular block q-mt-sm">
           {{ props.subtext }}</span
@@ -119,7 +119,8 @@ function flip() {
 .front-image {
   transition: opacity 0.25s ease;
   opacity: 1;
-  height: 75%;
+  height: 70%;
+  min-height: fit-content;
 }
 
 .front-hidden {
