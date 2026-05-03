@@ -1,7 +1,7 @@
 <template>
-  <div class="box row">
+  <div class="box">
     <!-- Backside -->
-    <div class="card-back col" :class="{ 'back-visible': showBack }">
+    <div class="card-back" :class="{ 'back-visible': showBack }">
       <span class="text-dark text-subtitle2 text-weight-regular q-mt-sm">
         {{ detailtext }}
       </span>
@@ -20,29 +20,32 @@
     </div>
 
     <!-- Frontside -->
-    <div class="col q-mt-xl q-mb-md q-mx-lg front-content" :class="{ 'front-hidden': !showFront }">
-      <span class="text-primary text-h5 block">{{ props.header }}</span>
-      <span class="text-dark text-subtitle2 text-weight-regular block q-mt-sm">
-        {{ props.subtext }}</span
-      >
-      <q-btn
-        @click="flip()"
-        flat
-        no-caps
-        dense
-        color="primary"
-        icon-right="keyboard_arrow_right"
-        label="mehr erfahren"
-        size="md"
-        class="float-right q-mt-lg"
-      />
+    <div class="q-mb-md q-mx-lg front-content full-width" :class="{ 'front-hidden': !showFront }">
+      <q-img
+        class="full-width front-image q-mb-xl"
+        :src="props.image"
+        :class="{ 'front-hidden': !showFront }"
+        contain
+      ></q-img>
+
+      <div class="q-px-xl">
+        <span class="text-primary text-h5 block">{{ props.header }}</span>
+        <span class="text-dark text-subtitle2 text-weight-regular block q-mt-sm">
+          {{ props.subtext }}</span
+        >
+        <q-btn
+          @click="flip()"
+          flat
+          no-caps
+          dense
+          color="primary"
+          icon-right="keyboard_arrow_right"
+          label="mehr erfahren"
+          size="md"
+          class="float-right q-mt-lg"
+        />
+      </div>
     </div>
-    <q-img
-      class="col full-width front-image"
-      :src="props.image"
-      :class="{ 'front-hidden': !showFront }"
-      contain
-    ></q-img>
   </div>
 </template>
 
@@ -75,7 +78,7 @@ function flip() {
 
 <style lang="scss" scoped>
 .box {
-  height: 45vh !important;
+  height: 55vh !important;
   min-width: 45vw;
   overflow: hidden;
   position: relative;
@@ -92,10 +95,6 @@ function flip() {
 .box:hover {
   transform: scale(1.025);
   box-shadow: 0px 0px 10px $primary;
-}
-
-.q-img {
-  border-radius: 0px 20px 20px 0px;
 }
 
 .card-back {
@@ -120,6 +119,7 @@ function flip() {
 .front-image {
   transition: opacity 0.25s ease;
   opacity: 1;
+  height: 75%;
 }
 
 .front-hidden {
